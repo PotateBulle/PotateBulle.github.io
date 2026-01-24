@@ -20,168 +20,189 @@ title: Documenter les serveurs sans exposer les victimes
   <button class="dys-toggle" id="dys-toggle" type="button">Dys</button>
 </nav>
 
-# Comment je documente les serveurs sans exposer les victimes
+# Documenter les serveurs sans exposer les victimes
 
 <div class="tw-box">
-<strong>Trigger Warning – Contenus sensibles (violences sexuelles numériques, pédocriminalité)</strong><br><br>
-Cette page décrit ma manière de documenter des serveurs et contenus problématiques (leaks, tributes, prédation, pédosexuel), dans un objectif de signalement et de protection. Aucun contenu explicite n’est montré, mais les thématiques abordées restent lourdes.
+<strong>Trigger Warning – Contenus sensibles</strong><br><br>
+Cette page aborde des thématiques liées aux violences sexuelles numériques,
+aux espaces de prédation, aux leaks, aux deepfakes et à la pédocriminalité.
+Aucun contenu explicite n’est affiché, mais certains exemples ou descriptions
+peuvent évoquer des situations difficiles.
 </div>
 
-Cette page n’est pas un guide « technique » pour traquer des serveurs, ni un tutoriel d’enquête.  
-Elle décrit ma propre démarche de <strong>modération bénévole</strong> : comment je collecte, organise et sécurise des informations <strong>tout en minimisant l’exposition des victimes</strong>.
+Cette page n’est **ni un tutoriel d’enquête**, ni un guide technique pour traquer
+des serveurs ou des individus.  
+Elle décrit **ma démarche personnelle de modération et de veille bénévole** :
+comment documenter des situations problématiques **sans réexposer les victimes
+ni banaliser les violences**.
 
 ---
 
 ## 1. Mes priorités
 
-1. **Protéger les victimes avant tout**  
-   - Éviter de réexposer leurs images ou leurs noms.
-   - Limiter la circulation des contenus problématiques au strict nécessaire probatoire.
+1. **Protéger les victimes avant tout**
+   - Ne pas republier leurs images, leurs noms ou leurs identités.
+   - Éviter toute rediffusion inutile de contenus traumatisants.
 
-2. **Limiter ma propre exposition**  
-   - Ne pas rester des heures dans des espaces toxiques.
-   - Accepter que je ne peux pas « tout signaler / tout voir ».
+2. **Limiter ma propre exposition**
+   - Ne pas rester inutilement dans des espaces toxiques.
+   - Accepter que je ne peux pas tout voir, ni tout signaler.
 
-3. **Documenter pour signaler, pas pour archiver pour l’archivage**  
-   - L’objectif est de nourrir des signalements cohérents, pas de collectionner des horreurs.
+3. **Documenter pour signaler, pas pour accumuler**
+   - L’objectif est de produire des signalements clairs et exploitables,
+     pas de constituer des archives de contenus violents.
 
 ---
 
-## 2. Quelles informations je garde (et lesquelles je ne garde pas)
+## 2. Quelles informations je conserve (et lesquelles je limite)
 
 ### 2.1 Informations que je conserve
 
-- **Identifiants techniques** :
-  - ID de serveur.
-  - ID d’utilisateur·ices (quand c’est pertinent).
-  - liens de salons / messages (si nécessaire et manipulés avec prudence).
+- **Identifiants techniques**
+  - ID de serveur ou de canal.
+  - ID d’utilisateur·ices lorsque c’est pertinent.
+  - Liens de messages ou de salons (avec prudence).
 
-- **Métadonnées** :
-  - Date / heure d’observation.
-  - Plateforme.
+- **Métadonnées**
+  - Date et heure d’observation.
+  - Plateforme concernée.
   - Type d’espace (serveur public, privé, salon spécifique).
 
-- **Contexte** :
-  - Type de problématique (leaks, tributes, prédation sur proches, deepfakes, pédosexuel, etc.).
-  - Extraits de messages <strong>texte</strong> lorsque nécessaire pour prouver l’intention ou la nature de l’infraction (sans recopier tout le contenu, et en évitant de décrire des scènes explicites).
+- **Contexte**
+  - Nature des problématiques observées (leaks, tributes, prédation sur proches,
+    deepfakes, contenus pédosexuels, etc.).
+  - Extraits de messages **textuels**, lorsque nécessaires pour caractériser
+    l’infraction ou l’intention, sans recopier l’intégralité des propos.
 
-### 2.2 Ce que j’essaie de ne pas conserver ou de limiter au maximum
+### 2.2 Ce que je limite au maximum
 
 - Images ou vidéos explicites :
-  - De nudes, etc...
-  - De mineur·es.
-  - De violences sexuelles.
-  - De contenus violents ou explicites.
+  - nudes.
+  - contenus impliquant des mineur·es.
+  - violences sexuelles.
+  - contenus illégaux ou choquants.
 
-- Données permettant d’identifier directement une victime, si ce n’est pas indispensable pour le signalement :
-  - Nom civil.
-  - Coordonnées.
-  - Profil personnel hors contexte (ex : réseau social privé).
-  - Moyen d'identification.
+- Données permettant d’identifier directement une victime :
+  - nom civil.
+  - coordonnées.
+  - profils personnels hors contexte de signalement.
 
-Quand des éléments très sensibles sont indispensables pour un signalement ou une procédure précise, je les garde <strong>hors ligne</strong>, dans un espace sécurisé et chiffré, et je ne les partage pas publiquement, seulement avec les autorités compétentes (équipes Trust & Safety ou Pharos).
+Lorsque des éléments très sensibles sont indispensables à un signalement,
+ils sont conservés **hors ligne**, dans un espace chiffré, et transmis
+uniquement aux interlocuteur·ices légitimes
+(équipes Trust & Safety, Pharos, etc.).
 
 ---
 
 ## 3. Comment je structure mes notes
 
-Je garde un système de suivi non disponible en ligne qui ressemble à ceci (exemple) :
+Je maintiens un système de suivi **non public**, structuré autour de :
 
-- Un identifiant de cas (ex : `CAS-2025-B324J` et `CAS-2025-A105G`).
-- La plateforme (Discord, etc.).
-- Le type d’espace (serveur, salon, etc.).
-- Un résumé du problème (ex : « serveur de leaks d’influenceureuses », « serveur de prédation sur proches »).
-- La date et l'heure de détection.
-- Les actions réalisées (signalement à la plateforme, etc.).
-- Le statut (en cours, en attente de réponse, archivé…).
+- un identifiant de cas (ex. `CAS-2025-B324J`).
+- la plateforme concernée,
+- le type d’espace (serveur, salon, etc.).
+- un résumé synthétique du problème.
+- la date et l’heure de détection.
+- les actions entreprises (signalement, suivi).
+- le statut du cas.
 
-L’idée est de pouvoir :
-
-- Retrouver facilement ce qui a déjà été signalé.
-- Éviter de dupliquer les signalements à l’infini.
-- Garder une trace claire sans accumuler des copies de contenu illégal.
+Ce système me permet de :
+- éviter les doublons.
+- suivre l’évolution d’un signalement.
+- garder une trace sans accumuler de contenus illégaux.
 
 ---
 
-## 4. Captures d’écran : pourquoi, quand, comment
+## 4. Captures d’écran : usage et précautions
 
-### 4.1 Pourquoi je fais parfois des captures
+### 4.1 Pourquoi j’en fais parfois
 
-- Pour montrer la structure d’un serveur : noms de salons, catégories, messages-clés.
-- Pour prouver qu’il ne s’agit pas simplement de « blagues » isolées mais d’un fonctionnement organisé.
-- Pour attester de la présence de termes explicites (par exemple, mentions d’âge, de « leaks », de contenus pédosexuels…).
+- Montrer la structure globale d’un espace.
+- Mettre en évidence des dynamiques organisées.
+- Attester de la présence de termes ou de catégories problématiques.
 
 ### 4.2 Comment je limite l’exposition
 
-- Je recadre les captures pour :
-  - Éviter de montrer des pseudos complets.
-  - Éviter d’afficher des photos de profils identifiantes.
-  - Masquer les avatars ou noms des victimes.
+- Recadrage systématique des captures.
+- Masquage des pseudos, avatars et éléments identifiants.
+- Usage réservé aux signalements ou à un travail interne anonymisé.
 
-- Je <strong>n’utilise pas</strong> ces captures en public :
-  - Elles servent aux signalements.
-  - Parfois à documenter la situation de manière anonymisée dans mon propre travail, en les caviardant fortement.
-
-- Quand je partage un exemple en public :
-  - Je peux transformer la capture en schéma ou en texte synthétique.
-  - Je supprime toute possibilité de reconnaître une personne précise.
+En public, les captures sont remplacées par :
+- des schémas.
+- des descriptions synthétiques.
+- ou des exemples fortement caviardés.
 
 ---
 
-## 5. Où je stocke les informations
+## 5. Où et comment je stocke les informations
 
-- Je privilégie un stockage :
-  - <strong>Local</strong> (disque dur externe chiffré, dossier protégé).
-  - Limités à un usage précis (par exemple la divulgation auprès des équipes Trust & Safety ou de Pharos).
+- Stockage prioritairement :
+  - local.
+  - chiffré.
+  - limité à un usage précis.
 
-- Je sépare clairement :
-  - Les contenus de <strong>documentation</strong> (notes, résumés, typologies).
-  - Les contenus de <strong>preuve strictement nécessaires</strong> (à manipuler avec beaucoup de précautions dans un espaces sécurisé).
+- Séparation claire entre :
+  - **documentation analytique** (notes, synthèses).
+  - **preuves strictement nécessaires** (manipulées avec précaution).
 
-**Je ne publie pas ces éléments bruts, et je ne les partage pas avec des personnes qui n’ont pas un rôle clair (plateformes, autorités, associations spécialisées, etc.).**
-
----
-
-## 6. Ce que je ne fais pas
-
-- Je ne tiens pas de « mur de la honte » public listant des pseudos ou des serveurs.
-- Je ne donne pas d’instructions pour retrouver des serveurs problématiques ou contourner les systèmes de modération.
-- Je ne partage pas de contenus explicites ou illégaux, même à titre « d’exemple ».
-
-Mon objectif est d’<strong>observer et signaler</strong>, pas de jouer les justicièr·es ou d’entretenir la circulation de contenus traumatisants.
+Je ne publie pas ces éléments bruts et ne les partage pas en dehors
+d’un cadre clair et légitime.
 
 ---
 
-## 7. Prendre soin de soi dans ce travail
+## 6. Exemple de documentation responsable
 
-Travailler sur des violences sexuelles numériques a un coût :
+Pour illustrer concrètement cette démarche, je mets à disposition
+un **exemple anonymisé et sanitisé**.
 
-- Fatigue.
-- Saturation.
-- Perte de confiance en l’humain.
-- Sentiment d’impuissance.
+Dépôt d’exemple :  
+[Safety Signals (Observer)](https://github.com/PotiteBulle/safety-signals-observer)
 
-Quelques limites que je me fixe :
+Ce dépôt montre :
+- la séparation entre analyse et preuves.
+- l’anonymisation systématique des identifiants.
+- la minimisation des données.
+- l’absence de reproduction inutile de contenus sensibles.
 
-- Ne pas passer des heures en continu dans des espaces toxiques.
-- Accepter de ne pas pouvoir « tout voir » ni « tout signaler » .
-- Parler, quand c’est possible, à des personnes de confiance qui comprennent ce type d’engagement.
-- Faire des pauses, s’autoriser à se déconnecter.
-
-**Ce travail de veille et de modération bénévole est important, mais il ne doit pas faire disparaître votre propre sécurité émotionnelle et mentale.**
+Il s’agit d’un **exemple méthodologique**.
 
 ---
 
-## 8. Rappel important
+## 7. Ce que je ne fais pas
 
-Cette page n’est pas :
+- Pas de « mur de la honte » public.
+- Pas de listes de pseudos exposées.
+- Pas d’instructions pour contourner les règles des plateformes.
+- Pas de diffusion de contenus explicites, même à titre d’exemple.
 
-- Un tuto d’enquête.
-- Une incitation à aller chercher des contenus pédosexuels ou illégaux.
-- Un guide pour contourner les règles des plateformes.
+---
 
-**Elle décrit simplement <strong>ma manière de limiter la casse et de fonctionnement</strong> :  
-Documenter suffisamment pour signaler efficacement, sans transformer les victimes en « objets d’étude » ni normaliser la circulation de contenus violents.**
+## 8. Prendre soin de soi
+
+Ce travail a un coût émotionnel réel :
+fatigue, saturation, perte de confiance, sentiment d’impuissance.
+
+Je me fixe donc des limites claires :
+- temps d’exposition limité.
+- pauses régulières.
+- échanges avec des personnes de confiance.
+- droit de décrocher.
+
+**La veille et la modération bénévole sont importantes,  
+mais elles ne doivent jamais se faire au détriment de la santé mentale.**
+
+---
+
+## 9. Rappel
+
+Cette page :
+- n’est pas un guide d’enquête.
+- n’est pas une incitation à rechercher des contenus illégaux.
+- n’est pas un outil d’exposition.
+
+Elle décrit simplement **une manière de documenter suffisamment
+pour signaler efficacement, sans transformer les victimes en objets d’étude
+ni banaliser les violences**.
 
 ---
 
