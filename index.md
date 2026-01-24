@@ -106,7 +106,6 @@ L’objectif est de **décrire des mécanismes**, pas de jeter des individu·es 
   [Journal de veille anonymisé](/pages/journal-veille-anonymise.html)
 - Des **ressources et liens utiles** pour l’aide, le signalement et la prévention :  
   [Ressources & liens utiles](/pages/ressources-liens-utiles.html)
-- Des **pistes de signalement et de protection** : comment utiliser les outils internes / externes des plateformes, à qui s’adresser, comment conserver des preuves sans se mettre en danger.
 
 ---
 
