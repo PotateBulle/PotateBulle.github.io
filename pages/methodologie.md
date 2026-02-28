@@ -32,6 +32,17 @@ Aucune infiltration, aucun contournement technique, aucun accès illégitime ne 
 Aucune donnée personnelle sensible n’est collectée ni publiée.
 </div>
 
+## Positionnement
+
+Cette méthodologie s’inscrit dans une démarche de veille bénévole structurée, orientée vers :
+
+- La protection des personnes exposées à des violences numériques.
+- L’identification de schémas de diffusion non consentie.
+- Le signalement responsable auprès des plateformes concernées.
+- La réduction des préjudices sans amplification des contenus.
+
+Elle ne constitue ni une enquête judiciaire, ni une activité d’infiltration, ni une démarche d’exposition publique.
+
 ---
 
 ## 1. Cadre général
