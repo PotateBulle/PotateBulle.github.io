@@ -2,7 +2,7 @@
 title: Méthodologie – Veille, documentation et signalement responsable
 ---
 
-<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="Blog/assets/css/style.css">
 
 <nav class="top-nav">
   <a href="/">Accueil</a>
@@ -185,4 +185,4 @@ L’objectif est d’améliorer la qualité du signalement tout en réduisant le
 
 © Potite_Bulle – Tous droits réservés.
 
-<script src="/assets/js/theme-toggle.js"></script>
+<script src="Blog/assets/js/theme-toggle.js"></script>

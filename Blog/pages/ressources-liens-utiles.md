@@ -2,7 +2,7 @@
 title: Ressources & liens utiles
 ---
 
-<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="Blog/assets/css/style.css">
 
 <nav class="top-nav">
   <a href="/">Accueil</a>
@@ -171,4 +171,4 @@ N’hésitez pas à demander de l’aide, même si les faits datent.**
 
 © Potite_Bulle – Tous droits réservés.
 
-<script src="/assets/js/theme-toggle.js"></script>
+<script src="Blog/assets/js/theme-toggle.js"></script>

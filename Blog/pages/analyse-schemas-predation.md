@@ -2,7 +2,7 @@
 title: Veille & modération – Analyse des schémas de prédation
 ---
 
-<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="Blog/assets/css/style.css">
 
 <nav class="top-nav">
   <a href="/">Accueil</a>
@@ -174,4 +174,4 @@ Cette page a pour objectif **d’expliquer des mécanismes**, de **documenter de
 
 © Potite_Bulle – Tous droits réservés.
 
-<script src="/assets/js/theme-toggle.js"></script>
+<script src="Blog/assets/js/theme-toggle.js"></script>

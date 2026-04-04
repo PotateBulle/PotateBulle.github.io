@@ -2,7 +2,7 @@
 title: Veille & modération – Violences sexuelles numériques
 ---
 
-<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="Blog/assets/css/style.css">
 
 <nav class="top-nav">
   <a href="/" class="active">Accueil</a>
@@ -171,4 +171,4 @@ Aucune reproduction, diffusion, traduction ou adaptation, même partielle, n’e
 
 © Potite_Bulle – Tous droits réservés.
 
-<script src="/assets/js/theme-toggle.js"></script>
+<script src="Blog/assets/js/theme-toggle.js"></script>

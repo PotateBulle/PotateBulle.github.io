@@ -2,7 +2,7 @@
 title: Documenter les serveurs sans exposer les victimes
 ---
 
-<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="Blog/assets/css/style.css">
 
 <nav class="top-nav">
   <a href="/">Accueil</a>
@@ -209,4 +209,4 @@ ni banaliser les violences**.
 
 © Potite_Bulle – Tous droits réservés.
 
-<script src="/assets/js/theme-toggle.js"></script>
+<script src="Blog/assets/js/theme-toggle.js"></script>
