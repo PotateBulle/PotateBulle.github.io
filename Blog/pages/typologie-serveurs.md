@@ -185,4 +185,6 @@ Elle ne remplace pas le travail d’enquête, ni les procédures des plateformes
 
 © Potite_Bulle – Tous droits réservés.
 
-<script src="/Blog/assets/js/theme-toggle.js"></script>
+<script src="/Blog/assets/js/theme-toggle.js">
+  
+</script>

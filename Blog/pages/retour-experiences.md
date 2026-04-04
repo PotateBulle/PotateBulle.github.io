@@ -209,4 +209,6 @@ Ce n’est pas parce que les plateformes ne font pas assez (selon vous) que vous
 
 © Potite_Bulle – Tous droits réservés.
 
-<script src="/Blog/assets/js/theme-toggle.js"></script>
+<script src="/Blog/assets/js/theme-toggle.js">
+  
+</script>

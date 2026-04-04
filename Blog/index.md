@@ -171,4 +171,6 @@ Aucune reproduction, diffusion, traduction ou adaptation, même partielle, n’e
 
 © Potite_Bulle – Tous droits réservés.
 
-<script src="/Blog/assets/js/theme-toggle.js"></script>
+<script src="/Blog/assets/js/theme-toggle.js">
+  
+</script>

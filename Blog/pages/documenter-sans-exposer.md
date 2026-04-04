@@ -209,4 +209,6 @@ ni banaliser les violences**.
 
 © Potite_Bulle – Tous droits réservés.
 
-<script src="/Blog/assets/js/theme-toggle.js"></script>
+<script src="/Blog/assets/js/theme-toggle.js">
+  
+</script>
