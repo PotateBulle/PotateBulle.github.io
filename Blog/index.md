@@ -2,18 +2,18 @@
 title: Veille & modération – Violences sexuelles numériques
 ---
 
-<link rel="stylesheet" href="Blog/assets/css/style.css">
+<link rel="stylesheet" href="/Blog/assets/css/style.css">
 
 <nav class="top-nav">
   <a href="/" class="active">Accueil</a>
-  <a href="/pages/violences-sexuelles-numeriques.html">Comprendre les violences</a>
-  <a href="/pages/analyse-schemas-predation.html">Analyse des schémas de prédation</a>
-  <a href="/pages/typologie-serveurs.html">Typologie de serveurs</a>
-  <a href="/pages/documenter-sans-exposer.html">Documenter sans exposer</a>
-  <a href="/pages/methodologie.html">Méthodologie</a>
-  <a href="/pages/journal-veille-anonymise.html">Journal de veille</a>
-  <a href="/pages/ressources-liens-utiles.html">Ressources &amp; liens utiles</a>
-  <a href="/pages/retour-experiences.html">Retours d’expérience</a>
+  <a href="Blog/pages/violences-sexuelles-numeriques.html">Comprendre les violences</a>
+  <a href="Blog/pages/analyse-schemas-predation.html">Analyse des schémas de prédation</a>
+  <a href="Blog/pages/typologie-serveurs.html">Typologie de serveurs</a>
+  <a href="Blog/pages/documenter-sans-exposer.html">Documenter sans exposer</a>
+  <a href="Blog/pages/methodologie.html">Méthodologie</a>
+  <a href="Blog/pages/journal-veille-anonymise.html">Journal de veille</a>
+  <a href="Blog/pages/ressources-liens-utiles.html">Ressources &amp; liens utiles</a>
+  <a href="Blog/pages/retour-experiences.html">Retours d’expérience</a>
 
   <button id="theme-toggle" class="theme-toggle" type="button">
     🌙 Mode sombre
@@ -94,19 +94,19 @@ L’objectif est de **décrire des mécanismes**, pas de jeter des individu·es 
 ## Ce que vous trouverez ici
 
 - Des **analyses de schémas de prédation** : comment ces serveurs sont organisés, quels types de salons existent, quels mots-clés reviennent, quelles dynamiques se mettent en place : 
-  [Analyse des schémas de prédation](/pages/analyse-schemas-predation.html)
+  [Analyse des schémas de prédation](Blog/pages/analyse-schemas-predation.html)
 - Des **retours d’expérience de modération bénévole** : outils, limites, charge mentale, difficultés face à l’inaction des plateformes :
-  [Retours d’expérience de modération bénévole](/pages/retour-experiences.md)
+  [Retours d’expérience de modération bénévole](Blog/pages/retour-experiences.md)
 - une **page de base pour comprendre ce que sont les violences sexuelles numériques** :  
-  [Comprendre les violences sexuelles numériques](/pages/violences-sexuelles-numeriques.html)
+  [Comprendre les violences sexuelles numériques](Blog/pages/violences-sexuelles-numeriques.html)
 - Une **typologie de serveurs de leaks, tributes et espaces de prédation** :  
-  [Typologie de serveurs de leaks / tributes](/pages/typologie-serveurs.html)
+  [Typologie de serveurs de leaks / tributes](Blog/pages/typologie-serveurs.html)
 - Une **explication de ma manière de documenter sans exposer les victimes** :  
-  [Documenter les serveurs sans exposer les victimes](/pages/documenter-sans-exposer.html)
+  [Documenter les serveurs sans exposer les victimes](Blog/pages/documenter-sans-exposer.html)
 - Un **journal de veille anonymisé (Exemple)**, présentant des cas typiques de manière synthétique et non identifiante :  
-  [Journal de veille anonymisé](/pages/journal-veille-anonymise.html)
+  [Journal de veille anonymisé](Blog/pages/journal-veille-anonymise.html)
 - Des **ressources et liens utiles** pour l’aide, le signalement et la prévention :  
-  [Ressources & liens utiles](/pages/ressources-liens-utiles.html)
+  [Ressources & liens utiles](Blog/pages/ressources-liens-utiles.html)
 
 ---
 
@@ -171,4 +171,4 @@ Aucune reproduction, diffusion, traduction ou adaptation, même partielle, n’e
 
 © Potite_Bulle – Tous droits réservés.
 
-<script src="Blog/assets/js/theme-toggle.js"></script>
+<script src="/Blog/assets/js/theme-toggle.js"></script>

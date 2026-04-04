@@ -2,18 +2,18 @@
 title: Veille & modération – Analyse des schémas de prédation
 ---
 
-<link rel="stylesheet" href="Blog/assets/css/style.css">
+<link rel="stylesheet" href="/Blog/assets/css/style.css">
 
 <nav class="top-nav">
   <a href="/">Accueil</a>
-  <a href="/pages/violences-sexuelles-numeriques.html">Comprendre les violences</a>
-  <a href="/pages/analyse-schemas-predation.html" class="active">Analyse des schémas de prédation</a>
-  <a href="/pages/typologie-serveurs.html">Typologie de serveurs</a>
-  <a href="/pages/documenter-sans-exposer.html">Documenter sans exposer</a>
-  <a href="/pages/methodologie.html">Méthodologie</a>
-  <a href="/pages/journal-veille-anonymise.html">Journal de veille</a>
-  <a href="/pages/ressources-liens-utiles.html">Ressources &amp; liens utiles</a>
-  <a href="/pages/retour-experiences.html">Retours d’expérience</a>
+  <a href="Blog/pages/violences-sexuelles-numeriques.html">Comprendre les violences</a>
+  <a href="Blog/pages/analyse-schemas-predation.html" class="active">Analyse des schémas de prédation</a>
+  <a href="Blog/pages/typologie-serveurs.html">Typologie de serveurs</a>
+  <a href="Blog/pages/documenter-sans-exposer.html">Documenter sans exposer</a>
+  <a href="Blog/pages/methodologie.html">Méthodologie</a>
+  <a href="Blog/pages/journal-veille-anonymise.html">Journal de veille</a>
+  <a href="Blog/pages/ressources-liens-utiles.html">Ressources &amp; liens utiles</a>
+  <a href="Blog/pages/retour-experiences.html">Retours d’expérience</a>
 
   <button id="theme-toggle" class="theme-toggle" type="button">
     🌙 Mode sombre
@@ -174,4 +174,4 @@ Cette page a pour objectif **d’expliquer des mécanismes**, de **documenter de
 
 © Potite_Bulle – Tous droits réservés.
 
-<script src="Blog/assets/js/theme-toggle.js"></script>
+<script src="/Blog/assets/js/theme-toggle.js"></script>
