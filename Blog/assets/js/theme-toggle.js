@@ -1,56 +1,61 @@
-(function () {
+(() => {
+  const body = document.body;
   const themeToggle = document.getElementById('theme-toggle');
   const dysToggle = document.getElementById('dys-toggle');
 
-  /* ============================
-     Thème clair / sombre (dark mode)
-     ============================ */
-  const storedTheme = localStorage.getItem('theme');
-  const systemPrefersDark =
-    window.matchMedia &&
-    window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const KEYS = {
+    theme: 'theme',
+    dys: 'pb_dys_mode',
+  };
 
-  if (storedTheme === 'dark' || (!storedTheme && systemPrefersDark)) {
-    document.body.classList.add('dark-mode');
-  }
-  function updateThemeLabel() {
-    if (!themeToggle) return;
-    const isDark = document.body.classList.contains('dark-mode');
-    themeToggle.textContent = isDark ? '☀️ Mode clair' : '🌙 Mode sombre';
-  }
-  if (themeToggle) {
-    themeToggle.addEventListener('click', function () {
-      document.body.classList.toggle('dark-mode');
-      const isDark = document.body.classList.contains('dark-mode');
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
-      updateThemeLabel();
-    });
+  const CLASSES = {
+    dark: 'dark-mode',
+    dys: 'dys-mode',
+  };
 
-    updateThemeLabel();
-  }
+  const getStoredTheme = () => {
+    const savedTheme = localStorage.getItem(KEYS.theme);
+    if (savedTheme) return savedTheme;
 
-  /* ============================
-     Mode Dys (police + espacement)
-     ============================ */
-  const DYS_KEY = 'pb_dys_mode';
-  function applyDysMode(enabled) {
-    document.body.classList.toggle('dys-mode', enabled);
+    const prefersDark =
+      window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+
+    return prefersDark ? 'dark' : 'light';
+  };
+
+  const setTheme = (theme) => {
+    const isDark = theme === 'dark';
+    body.classList.toggle(CLASSES.dark, isDark);
+    localStorage.setItem(KEYS.theme, theme);
+
+    if (themeToggle) {
+      themeToggle.textContent = isDark ? '☀️ Mode clair' : '🌙 Mode sombre';
+    }
+  };
+
+  const toggleTheme = () => {
+    const isDark = body.classList.contains(CLASSES.dark);
+    setTheme(isDark ? 'light' : 'dark');
+  };
+
+  const setDysMode = (enabled) => {
+    body.classList.toggle(CLASSES.dys, enabled);
+    localStorage.setItem(KEYS.dys, enabled ? '1' : '0');
+
     if (dysToggle) {
       dysToggle.textContent = enabled ? 'Dys ✔' : 'Dys';
     }
-  }
+  };
 
-  const storedDys = localStorage.getItem(DYS_KEY);
-  if (storedDys === '1') {
-    applyDysMode(true);
-  } else {
-    applyDysMode(false);
-  }
-  if (dysToggle) {
-    dysToggle.addEventListener('click', function () {
-      const enabled = !document.body.classList.contains('dys-mode');
-      applyDysMode(enabled);
-      localStorage.setItem(DYS_KEY, enabled ? '1' : '0');
-    });
-  }
+  const toggleDysMode = () => {
+    setDysMode(!body.classList.contains(CLASSES.dys));
+  };
+
+  // Initialisation
+  setTheme(getStoredTheme());
+  setDysMode(localStorage.getItem(KEYS.dys) === '1');
+
+  // Events
+  themeToggle?.addEventListener('click', toggleTheme);
+  dysToggle?.addEventListener('click', toggleDysMode);
 })();
