@@ -1,44 +1,45 @@
+/* Import police Dys */
+@import url("https://fonts.cdnfonts.com/css/opendyslexic");
+
 /* ============================
    Variables globales
    ============================ */
 :root {
-  /* Couleurs */
-  --bg-body: #f8d3f3;
-  --bg-card: #ddd8f3e1;
-  --bg-nav: #f9fafb;
-  --bg-nav-hover: #eef2ff;
-  --border-soft: #e5defa;
+  /* Couleurs générales */
+  --bg-body: #cfc4dd;
+  --bg-card: #6f879a;
+  --bg-nav: #020617;
+  --bg-nav-hover: #1e293b;
 
-  --text-main: #111827;
-  --text-muted: #4b5563;
+  --border-soft: rgba(255, 255, 255, 0.35);
+  --text-main: #f5eded;
+  --text-muted: #e5e7eb;
 
-  --accent: #6366f1;
-  --accent-soft: #e0e7ff;
-  --accent-strong: #1e3a8a;
-  --accent-border: #a5b4fc;
-  --accent-hover-border: #c7d2fe;
+  --accent: #8ea2ff;
+  --accent-soft: #2849b3;
+  --accent-strong: #d7ddff;
+  --accent-border: #6d89ff;
+  --accent-hover-border: #8ba2ff;
 
-  --tw-bg: #fff7ed;
-  --tw-border: #fed7aa;
-  --tw-text: #9a3412;
+  --tw-bg: #07142d;
+  --tw-border: #ff8c1a;
+  --tw-text: #ffc67a;
 
-  --note-bg: #ecfeff;
-  --note-border: #22c1d6;
-
-  /* UI */
-  --radius-sm: 4px;
-  --radius-md: 10px;
-  --radius-lg: 14px;
-  --radius-pill: 999px;
-
-  --shadow-md: 0 10px 30px rgba(148, 163, 184, 0.25);
+  --note-bg: rgba(7, 70, 82, 0.35);
+  --note-border: #38bff8;
 
   /* Typo */
   --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
 
-  /* Transitions */
+  /* Rayons / ombres */
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-lg: 18px;
+  --radius-pill: 999px;
+
+  --shadow-md: 0 12px 32px rgba(58, 32, 82, 0.35);
   --transition-fast: 0.15s ease;
 }
 
@@ -46,39 +47,56 @@
    Mode sombre
    ============================ */
 body.dark-mode {
-  --bg-body: #2b076e48;
-  --bg-card: #07465288;
+  --bg-body: #bcb2cf;
+  --bg-card: #6f879a;
   --bg-nav: #020617;
   --bg-nav-hover: #1e293b;
-  --border-soft: #1f2937;
 
-  --text-main: #e5e7eb;
-  --text-muted: #9ca3af;
+  --border-soft: rgba(255, 255, 255, 0.28);
+  --text-main: #f5eded;
+  --text-muted: #d1d5db;
 
   --accent: #a5b4fc;
-  --accent-soft: #111827;
-  --accent-strong: #1e3a8a;
-  --accent-border: #1e3a8a;
-  --accent-hover-border: #334155;
+  --accent-soft: #2849b3;
+  --accent-strong: #e7ebff;
+  --accent-border: #7c8eff;
+  --accent-hover-border: #95a7ff;
 
-  --tw-bg: #111827;
-  --tw-border: #fb923c;
-  --tw-text: #fed7aa;
+  --tw-bg: #07142d;
+  --tw-border: #ff8c1a;
+  --tw-text: #ffc67a;
 
-  --note-bg: #07465288;
-  --note-border: #38bff896;
+  --note-bg: rgba(7, 70, 82, 0.4);
+  --note-border: #38bff8;
 
-  --shadow-md: 0 12px 32px rgba(15, 23, 42, 0.85);
+  --shadow-md: 0 12px 34px rgba(44, 23, 63, 0.45);
 }
 
 /* ============================
    Mode Dys
    ============================ */
 body.dys-mode {
-  --font-main: "OpenDyslexic", "Verdana", "Tahoma", system-ui, -apple-system,
-    BlinkMacSystemFont, "Segoe UI", sans-serif;
-  line-height: 1.9;
-  letter-spacing: 0.03em;
+  --font-main: "OpenDyslexic", "Verdana", "Tahoma", system-ui, sans-serif;
+}
+
+/* On applique vraiment la lisibilité aux éléments texte */
+body.dys-mode,
+body.dys-mode p,
+body.dys-mode li,
+body.dys-mode a,
+body.dys-mode span,
+body.dys-mode button,
+body.dys-mode h1,
+body.dys-mode h2,
+body.dys-mode h3,
+body.dys-mode .markdown-body,
+body.dys-mode .top-nav a,
+body.dys-mode .theme-toggle,
+body.dys-mode .dys-toggle {
+  font-family: var(--font-main);
+  line-height: 1.95;
+  letter-spacing: 0.035em;
+  word-spacing: 0.08em;
 }
 
 /* ============================
@@ -102,30 +120,32 @@ main,
 .markdown-body {
   box-sizing: border-box;
   max-width: 900px;
-  margin: 2.5rem auto 3rem;
-  padding: 2.1rem 2rem 2.6rem;
+  margin: 0.8rem auto 2.5rem;
+  padding: 2rem 1.75rem 2.4rem;
   background: var(--bg-card);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
 }
 
 /* ============================
-   Header / titre
+   Titre du site
    ============================ */
 .site-title {
-  margin: 0.9rem 0 0.3rem;
+  margin: 0.6rem 0 0.5rem;
   font-size: 1.35rem !important;
-  font-weight: 650 !important;
-  letter-spacing: 0.02em;
+  font-weight: 700 !important;
+  letter-spacing: 0.01em;
 }
 
 .site-title a {
-  color: var(--text-main) !important;
+  color: var(--accent-strong) !important;
   text-decoration: none;
 }
 
-.site-title a:hover {
+.site-title a:hover,
+.site-title a:focus-visible {
   text-decoration: underline;
+  outline: none;
 }
 
 /* ============================
@@ -135,8 +155,10 @@ main,
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.45rem;
-  margin-bottom: 1.4rem;
+  gap: 0.5rem;
+  margin: 1rem 0 1.8rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--border-soft);
 }
 
 .top-nav a,
@@ -144,34 +166,39 @@ main,
 .dys-toggle {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
+  min-height: 36px;
   border: 1px solid var(--border-soft);
   border-radius: var(--radius-pill);
   color: var(--text-main);
-  font-size: 0.88rem;
   text-decoration: none;
   transition:
     background-color var(--transition-fast),
     border-color var(--transition-fast),
-    color var(--transition-fast);
+    color var(--transition-fast),
+    transform var(--transition-fast);
 }
 
 .top-nav a {
-  padding: 0.3rem 0.85rem;
+  padding: 0.35rem 0.95rem;
   background: var(--bg-nav);
+  font-size: 0.88rem;
+  font-weight: 500;
 }
 
 .top-nav a:hover,
 .top-nav a:focus-visible {
   background: var(--bg-nav-hover);
   border-color: var(--accent-hover-border);
-  color: var(--accent);
+  color: var(--accent-strong);
   outline: none;
+  transform: translateY(-1px);
 }
 
 .top-nav a.active {
   background: var(--accent-soft);
   border-color: var(--accent-border);
-  color: var(--accent-strong);
+  color: #ffffff;
 }
 
 /* ============================
@@ -180,7 +207,7 @@ main,
 .theme-toggle,
 .dys-toggle {
   gap: 0.35rem;
-  padding: 0.25rem 0.75rem;
+  padding: 0.25rem 0.9rem;
   background: transparent;
   font-size: 0.85rem;
   cursor: pointer;
@@ -191,17 +218,25 @@ main,
 }
 
 .dys-toggle {
-  margin-left: 0.25rem;
+  margin-left: 0.15rem;
 }
 
 .theme-toggle:hover,
 .theme-toggle:focus-visible,
 .dys-toggle:hover,
 .dys-toggle:focus-visible {
-  background: var(--accent-soft);
-  border-color: var(--accent);
-  color: var(--accent);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--accent-hover-border);
+  color: var(--accent-strong);
   outline: none;
+  transform: translateY(-1px);
+}
+
+/* État visuel du bouton Dys quand activé */
+body.dys-mode .dys-toggle {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--accent-border);
+  color: var(--accent-strong);
 }
 
 /* ============================
@@ -211,24 +246,24 @@ h1,
 h2,
 h3 {
   color: var(--text-main);
-  font-weight: 650;
+  font-weight: 700;
 }
 
 h1 {
-  margin: 0 0 1.1rem;
-  font-size: 2.1rem;
+  margin: 0 0 1rem;
+  font-size: 2.05rem;
   line-height: 1.25;
 }
 
 h2 {
-  margin: 2.2rem 0 0.9rem;
-  padding-bottom: 0.4rem;
+  margin: 2rem 0 0.9rem;
+  padding-bottom: 0.45rem;
   font-size: 1.4rem;
   border-bottom: 1px solid var(--border-soft);
 }
 
 h3 {
-  margin: 1.7rem 0 0.55rem;
+  margin: 1.5rem 0 0.55rem;
   font-size: 1.12rem;
 }
 
@@ -236,44 +271,46 @@ h3 {
    Texte courant
    ============================ */
 p {
-  margin: 0.4rem 0 0.95rem;
+  margin: 0.5rem 0 1rem;
 }
 
-ul {
-  margin: 0.35rem 0 1.05rem;
-  padding-left: 1.3rem;
+ul,
+ol {
+  margin: 0.4rem 0 1.05rem;
+  padding-left: 1.35rem;
 }
 
 li + li {
-  margin-top: 0.25rem;
+  margin-top: 0.28rem;
 }
 
 /* ============================
-   Liens globaux
+   Liens
    ============================ */
 a {
-  color: var(--accent);
+  color: var(--accent-strong);
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition:
     border-color var(--transition-fast),
-    background-color var(--transition-fast);
+    background-color var(--transition-fast),
+    color var(--transition-fast);
 }
 
 a:hover,
 a:focus-visible {
-  background-color: var(--accent-soft);
-  border-bottom-color: var(--accent);
+  border-bottom-color: currentColor;
+  background-color: rgba(255, 255, 255, 0.06);
   outline: none;
 }
 
 /* ============================
-   Alertes / Trigger warning
+   Trigger warning
    ============================ */
 .tw-box {
-  margin: 1.2rem 0 1.6rem;
-  padding: 0.9rem 1rem 1.05rem;
-  font-size: 0.96rem;
+  margin: 1.2rem 0 1.8rem;
+  padding: 1rem 1rem 1.05rem;
+  font-size: 0.98rem;
   background: var(--tw-bg);
   border: 1px solid var(--tw-border);
   border-radius: var(--radius-md);
@@ -288,7 +325,7 @@ a:focus-visible {
    ============================ */
 .note {
   margin: 1rem 0;
-  padding: 0.55rem 0.8rem;
+  padding: 0.65rem 0.85rem;
   font-size: 0.95rem;
   color: var(--text-muted);
   background: var(--note-bg);
@@ -300,10 +337,10 @@ a:focus-visible {
    Code inline
    ============================ */
 code {
-  padding: 0.1rem 0.25rem;
+  padding: 0.1rem 0.28rem;
   font-family: var(--font-mono);
   font-size: 0.9em;
-  background: var(--border-soft);
+  background: rgba(255, 255, 255, 0.12);
   border-radius: var(--radius-sm);
 }
 
@@ -311,7 +348,7 @@ code {
    Séparateurs
    ============================ */
 hr {
-  margin: 2.2rem 0 1.8rem;
+  margin: 2rem 0 1.6rem;
   border: 0;
   border-top: 1px solid var(--border-soft);
 }
@@ -327,12 +364,33 @@ hr {
   .page,
   main,
   .markdown-body {
-    margin: 1.5rem 1rem 2.3rem;
-    padding: 1.5rem 1.15rem 2rem;
-    border-radius: 12px;
+    margin: 0.75rem 0.9rem 2rem;
+    padding: 1.35rem 1rem 1.8rem;
+    border-radius: 14px;
+  }
+
+  .top-nav {
+    gap: 0.45rem;
+  }
+
+  .theme-toggle {
+    margin-left: 0;
   }
 
   h1 {
-    font-size: 1.8rem;
+    font-size: 1.75rem;
+  }
+}
+
+/* ============================
+   Réduction animations
+   ============================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    transform: none !important;
+    scroll-behavior: auto !important;
   }
 }
