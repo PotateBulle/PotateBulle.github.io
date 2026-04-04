@@ -6,14 +6,14 @@ title: Retours d’expérience de modération bénévole
 
 <nav class="top-nav">
   <a href="/">Accueil</a>
-  <a href="/pages/violences-sexuelles-numeriques.html">Violences sexuelles numériques</a>
-  <a href="/pages/analyse-schemas-predation.html">Analyse des schémas de prédation</a>
-  <a href="/pages/typologie-serveurs.html">Typologie de serveurs</a>
-  <a href="/pages/documenter-sans-exposer.html">Documenter sans exposer</a>
-  <a href="/pages/methodologie.html">Méthodologie</a>
-  <a href="/pages/journal-veille-anonymise.html">Journal de veille anonymisé</a>
-  <a href="/pages/ressources-liens-utiles.html">Ressources & liens utiles</a>
-  <a href="/pages/retour-experiences.html" class="active">Retours d’expérience</a>
+  <a href="/Blog/pages/violences-sexuelles-numeriques.html">Violences sexuelles numériques</a>
+  <a href="/Blog/pages/analyse-schemas-predation.html">Analyse des schémas de prédation</a>
+  <a href="/Blog/pages/typologie-serveurs.html">Typologie de serveurs</a>
+  <a href="/Blog/pages/documenter-sans-exposer.html">Documenter sans exposer</a>
+  <a href="/Blog/pages/methodologie.html">Méthodologie</a>
+  <a href="/Blog/pages/journal-veille-anonymise.html">Journal de veille anonymisé</a>
+  <a href="/Blog/pages/ressources-liens-utiles.html">Ressources & liens utiles</a>
+  <a href="/Blog/pages/retour-experiences.html" class="active">Retours d’expérience</a>
 
 <button id="theme-toggle" class="theme-toggle" type="button">
     🌙 Mode sombre
