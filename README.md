@@ -8,6 +8,10 @@ https://PotiteBulle.github.io
 
 ---
 <link rel="stylesheet" href="/Blog/assets/css/style.css">
+  <button id="theme-toggle" class="theme-toggle" type="button">
+    🌙 Mode sombre
+  </button>
+  <button class="dys-toggle" id="dys-toggle" type="button">Dys</button>
 
 ## Objectifs du site
 
@@ -66,3 +70,5 @@ Mise à jours Majeur :
 
 
 Pour l’historique détaillé, se référer aux commits Git de ce dépôt.
+
+<script src="/Blog/assets/js/theme-toggle.js"></script>
