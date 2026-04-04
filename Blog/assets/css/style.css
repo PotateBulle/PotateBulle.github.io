@@ -1,0 +1,329 @@
+/* ============================
+   Thème global – palette pastel
+   ============================ */
+:root {
+  /* Fond général / cartes */
+  --bg-body: #f8d3f3;
+  --bg-card: #ddd8f3e1;
+  --border-soft: #e5defa;
+  /* Texte */
+  --text-main: #111827;
+  --text-muted: #4b5563;
+  /* Accent (liens, boutons, hover) */
+  --accent: #6366f1;
+  --accent-soft: #e0e7ff;
+  /* Trigger warning */
+  --tw-bg: #fff7ed;
+  --tw-border: #fed7aa;
+  --tw-text: #9a3412;
+  /* Notes / encadrés info */
+  --note-bg: #ecfeff;
+  --note-border: #22c1d6;
+  /* Rayons / ombres / typo */
+  --radius-lg: 14px;
+  --radius-md: 10px;
+  --shadow-md: 0 10px 30px rgba(148, 163, 184, 0.25);
+  --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+/* ============================
+   Thème sombre pastel (body.dark-mode)
+   ============================ */
+body.dark-mode {
+  /* Fond général / cartes */
+  --bg-body: #2b076e48;
+  --bg-card: #07465288;
+  --border-soft: #1f2937;
+
+  /* Texte */
+  --text-main: #e5e7eb;
+  --text-muted: #9ca3af;
+
+  /* Accent (liens, boutons) */
+  --accent: #a5b4fc;
+  --accent-soft: #111827;
+
+  /* Trigger warning sombre */
+  --tw-bg: #111827;
+  --tw-border: #fb923c;
+  --tw-text: #fed7aa;
+
+  /* Notes / encadrés info */
+  --note-bg: #07465288;
+  --note-border: #38bff896;
+
+  /* Ombre */
+  --shadow-md: 0 12px 32px rgba(15, 23, 42, 0.85);
+}
+
+/* ============================
+   Mode Dys (activé avec body.dys-mode)
+   ============================ */
+/* OpenDyslexic pattern font */
+body.dys-mode {
+  --font-main: "OpenDyslexic", "Verdana", "Tahoma", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
+
+/* ============================
+   Fond global + typo
+   ============================ */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  background: var(--bg-body);
+  color: var(--text-main);
+  font-size: 16.5px;
+  line-height: 1.7;
+}
+
+/* ============================
+   Titre du site (header GitHub)
+   ============================ */
+.site-title {
+  font-size: 1.35rem !important;
+  font-weight: 650 !important;
+  letter-spacing: 0.02em;
+  margin: 0.9rem 0 0.3rem;
+}
+.site-title a {
+  color: var(--text-main) !important;
+  text-decoration: none;
+}
+.site-title a:hover {
+  text-decoration: underline;
+}
+
+/* ============================
+   Carte centrale : contenu
+   ============================ */
+.page,
+main,
+.markdown-body {
+  max-width: 900px;
+  margin: 2.5rem auto 3rem;
+  padding: 2.1rem 2rem 2.6rem;
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  box-sizing: border-box;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .page,
+  main,
+  .markdown-body {
+    margin: 1.5rem 1rem 2.3rem;
+    padding: 1.5rem 1.15rem 2rem;
+    border-radius: 12px;
+  }
+  body {
+    font-size: 15.8px;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* ============================
+   Menu de navigation interne
+   ============================ */
+.top-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 1.4rem;
+  align-items: center;
+}
+.top-nav a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-soft);
+  background: #f9fafb;
+  font-size: 0.88rem;
+  color: var(--text-main);
+  text-decoration: none;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+body.dark-mode .top-nav a {
+  background: #020617;
+}
+.top-nav a:hover,
+.top-nav a:focus-visible {
+  background: #eef2ff;
+  border-color: #c7d2fe;
+  color: var(--accent);
+  outline: none;
+}
+body.dark-mode .top-nav a:hover,
+body.dark-mode .top-nav a:focus-visible {
+  background: #1e293b;
+  border-color: #334155;
+}
+/* lien actif */
+.top-nav a.active {
+  background: #e0e7ff;
+  border-color: #a5b4fc;
+  color: #1e3a8a;
+}
+body.dark-mode .top-nav a.active {
+  background: #1e3a8a;
+  border-color: #1e3a8a;
+  color: #e5e7eb;
+}
+
+/* ============================
+   Boutons : dark mode + Dys
+   ============================ */
+.theme-toggle,
+.dys-toggle {
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-soft);
+  background: transparent;
+  font-size: 0.85rem;
+  color: var(--text-main);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+/* Le bouton dark mode est poussé à droite, le bouton Dys vient à côté */
+.theme-toggle {
+  margin-left: auto;
+}
+.dys-toggle {
+  margin-left: 0.25rem;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible,
+.dys-toggle:hover,
+.dys-toggle:focus-visible {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+  outline: none;
+}
+
+/* ============================
+   Titres
+   ============================ */
+h1,
+h2,
+h3 {
+  font-weight: 650;
+  color: var(--text-main);
+}
+h1 {
+  font-size: 2.1rem;
+  line-height: 1.25;
+  margin: 0 0 1.1rem;
+}
+h2 {
+  margin-top: 2.2rem;
+  margin-bottom: 0.9rem;
+  font-size: 1.4rem;
+  border-bottom: 1px solid var(--border-soft);
+  padding-bottom: 0.4rem;
+}
+h3 {
+  margin-top: 1.7rem;
+  margin-bottom: 0.55rem;
+  font-size: 1.12rem;
+}
+
+/* ============================
+   Paragraphes & listes
+   ============================ */
+p {
+  margin: 0.4rem 0 0.95rem;
+}
+ul {
+  padding-left: 1.3rem;
+  margin: 0.35rem 0 1.05rem;
+}
+li+li {
+  margin-top: 0.25rem;
+}
+
+/* ============================
+   Liens
+   ============================ */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+a:hover,
+a:focus-visible {
+  border-bottom-color: var(--accent);
+  background-color: var(--accent-soft);
+  outline: none;
+}
+
+/* ============================
+   Bloc Trigger Warning / alertes
+   ============================ */
+.tw-box {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--tw-border);
+  background: var(--tw-bg);
+  padding: 0.9rem 1rem 1.05rem;
+  margin: 1.2rem 0 1.6rem;
+  font-size: 0.96rem;
+}
+.tw-box strong {
+  color: var(--tw-text);
+}
+
+/* ============================
+   Petites notes / encadrés
+   ============================ */
+.note {
+  border-left: 4px solid var(--note-border);
+  background: var(--note-bg);
+  padding: 0.55rem 0.8rem;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  border-radius: 0 10px 10px 0;
+}
+
+/* ============================
+   Code inline
+   ============================ */
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-size: 0.9em;
+  background: var(--border-soft);
+  padding: 0.1rem 0.25rem;
+  border-radius: 4px;
+}
+
+/* ============================
+   Séparateurs horizontaux
+   ============================ */
+hr {
+  border: 0;
+  border-top: 1px solid var(--border-soft);
+  margin: 2.2rem 0 1.8rem;
+}
