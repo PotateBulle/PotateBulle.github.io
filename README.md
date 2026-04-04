@@ -7,6 +7,7 @@ Le site est accessible ici (une fois GitHub Pages activé) :
 https://PotiteBulle.github.io
 
 ---
+<link rel="stylesheet" href="/Blog/assets/css/style.css">
 
 ## Objectifs du site
 
