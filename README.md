@@ -49,13 +49,13 @@ En résumé : **tous droits réservés**.
 Je note ici les grandes évolutions du site :
 
 - `05/12/2025` : création du dépôt, ajout de `index.md` (page d’accueil + disclaimer + cadre éthique).
-- `05/12/2025` : Ajout de la page [Comprendre les violences sexuelles numériques](/pages/violences-sexuelles-numeriques.md)
-- `05/12/2025` : Ajout de la page [Typologie de serveurs de leaks / tributes](/pages/typologie-serveurs.md) 
-- `05/12/2025` : Ajout de la page [Documenter les serveurs sans exposer les victimes](/pages/documenter-sans-exposer.md)
-- `06/12/2025` : Ajout de la page [Journal de veille anonymisé](/pages/journal-veille-anonymise.md)
-- `06/12/2025` : Ajout de la page [Ressources & liens utiles](/pages/ressources-liens-utiles.md)
-- `07/12/2025` : Ajout de la page [Retour d'expériences](/pages/retour-experiences.md)
-- `12/12/2025` : Ajout de la page [Analyse des schémas de prédation](/pages/analyse-schemas-predation.md)
+- `05/12/2025` : Ajout de la page [Comprendre les violences sexuelles numériques](/Blog/pages/violences-sexuelles-numeriques.md)
+- `05/12/2025` : Ajout de la page [Typologie de serveurs de leaks / tributes](/Blog/pages/typologie-serveurs.md) 
+- `05/12/2025` : Ajout de la page [Documenter les serveurs sans exposer les victimes](/Blog/pages/documenter-sans-exposer.md)
+- `06/12/2025` : Ajout de la page [Journal de veille anonymisé](/Blog/pages/journal-veille-anonymise.md)
+- `06/12/2025` : Ajout de la page [Ressources & liens utiles](/Blog/pages/ressources-liens-utiles.md)
+- `07/12/2025` : Ajout de la page [Retour d'expériences](/Blog/pages/retour-experiences.md)
+- `12/12/2025` : Ajout de la page [Analyse des schémas de prédation](/Blog/pages/analyse-schemas-predation.md)
 
 
 Mise à jours Majeur : 
