@@ -64,7 +64,8 @@ Mise à jours Majeur :
 - `07/12/2025` : UI : bascule entre mode clair et mode sombre disponibles via petit bouton :  '☀️ Mode clair' : '🌙 Mode sombre' 
 - `08/12/2025` : UI : bascule entre les polices d'écritures & lecture avec Opendyslexic via petit bouton changement d'état : 'Dys' : 'Dys ✔'
 - `24/01/2026` : Mise à jour de la page "Documenter sans exposer"
-- `09/05/2026` : Mise à jour du style du blog 
+- `09/05/2026` : Mise à jour du style du blog
+- `09/05/2026` : Ajout d’une étude de cas anonymisée : **Dynamiques conversationnelles à risque sur Discord**.
 
 
 

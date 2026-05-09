@@ -1,0 +1,534 @@
+/* =========================================================
+   Analyse / Étude de cas — Style principal
+   Page HTML imprimable, sombre à l’écran, claire à l’impression
+   ========================================================= */
+
+/* ------------------------------
+   Variables globales
+   ------------------------------ */
+
+:root {
+  /* Couleurs principales */
+  --bg: #0b0c10;
+  --paper: #0f1117;
+  --panel: #12141b;
+  --panel-alt: #171a24;
+
+  /* Texte */
+  --text: #e8e8ea;
+  --muted: #b7b7c2;
+
+  /* Bordures et accents */
+  --border: #2a2e3a;
+  --accent: #a9c6ff;
+
+  /* États / encadrés */
+  --info-bg: #101826;
+  --info-border: #274b7a;
+
+  --warn-bg: #1a1420;
+  --warn-border: #4b2a7a;
+
+  --ok-bg: #121c16;
+  --ok-border: #2a7a4b;
+
+  --danger-bg: #1b1012;
+  --danger-border: #7a2a2a;
+
+  /* Code */
+  --code-bg: #0f1117;
+
+  /* Ombres */
+  --shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+
+  /* Polices */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Arial, sans-serif;
+
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", monospace;
+}
+
+/* ------------------------------
+   Base
+   ------------------------------ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* ------------------------------
+   Mise en page principale
+   ------------------------------ */
+
+.wrap {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 26px 16px 60px;
+}
+
+.paper {
+  overflow: hidden;
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+/* ------------------------------
+   En-tête
+   ------------------------------ */
+
+.topbar {
+  padding: 20px 18px 16px;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.title {
+  margin: 0 0 8px;
+  font-size: clamp(1.35rem, 2vw, 1.65rem);
+  line-height: 1.25;
+}
+
+.subtitle {
+  max-width: 82ch;
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 12px;
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+/* ------------------------------
+   Contenu
+   ------------------------------ */
+
+.content {
+  padding: 18px;
+}
+
+.section {
+  margin: 14px 0;
+  padding: 16px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.section:first-child {
+  margin-top: 0;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.section h2 {
+  margin: 0 0 12px;
+  font-size: 1.22rem;
+  line-height: 1.35;
+}
+
+.section h3 {
+  margin: 18px 0 8px;
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+.section h4 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+}
+
+p {
+  margin: 10px 0;
+  line-height: 1.75;
+}
+
+ul,
+ol {
+  margin: 10px 0 10px 1.25rem;
+  padding: 0;
+}
+
+li {
+  margin: 6px 0;
+  line-height: 1.65;
+}
+
+.small {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.hr {
+  height: 1px;
+  margin: 16px 0;
+  background: var(--border);
+}
+
+/* ------------------------------
+   Encadrés / callouts
+   ------------------------------ */
+
+.callout {
+  margin: 12px 0;
+  padding: 12px;
+  background: var(--info-bg);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--info-border);
+  border-radius: 12px;
+}
+
+.callout.warn {
+  background: var(--warn-bg);
+  border-left-color: var(--warn-border);
+}
+
+.callout.ok {
+  background: var(--ok-bg);
+  border-left-color: var(--ok-border);
+}
+
+.callout.danger {
+  background: var(--danger-bg);
+  border-left-color: var(--danger-border);
+}
+
+.callout > :first-child {
+  margin-top: 0;
+}
+
+.callout > :last-child {
+  margin-bottom: 0;
+}
+
+/* ------------------------------
+   Tableaux
+   ------------------------------ */
+
+table {
+  width: 100%;
+  margin: 12px 0;
+  overflow: hidden;
+  border-collapse: collapse;
+  background: var(--panel-alt);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+thead th {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+th,
+td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  font-weight: 650;
+}
+
+tbody tr:last-child th,
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Pour éviter que les longs hashs / codes cassent la mise en page */
+td,
+th,
+code {
+  overflow-wrap: anywhere;
+}
+
+/* ------------------------------
+   Badges / niveaux de gravité
+   ------------------------------ */
+
+.badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--muted);
+  font-size: 0.86rem;
+  white-space: nowrap;
+}
+
+.risk-low {
+  border-color: #2a7a4b;
+  color: #bfffe0;
+}
+
+.risk-med {
+  border-color: #7a6a2a;
+  color: #ffe7a8;
+}
+
+.risk-high {
+  border-color: #7a2a2a;
+  color: #ffbdbd;
+}
+
+/* ------------------------------
+   Citations expurgées
+   ------------------------------ */
+
+blockquote {
+  margin: 12px 0;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 3px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+}
+
+blockquote p {
+  margin: 0;
+}
+
+/* ------------------------------
+   Code
+   ------------------------------ */
+
+code,
+pre {
+  font-family: var(--font-mono);
+}
+
+code {
+  font-size: 0.95em;
+}
+
+pre {
+  overflow: auto;
+  margin: 12px 0;
+  padding: 12px;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+/* ------------------------------
+   Pied de page
+   ------------------------------ */
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px 14px;
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.01);
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* ------------------------------
+   Responsive
+   ------------------------------ */
+
+@media (max-width: 720px) {
+  .wrap {
+    padding: 14px 10px 40px;
+  }
+
+  .topbar,
+  .content,
+  .footer {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .section {
+    padding: 14px;
+  }
+
+  .meta {
+    gap: 8px;
+  }
+
+  .chip {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  th,
+  td {
+    min-width: 160px;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+}
+
+/* ------------------------------
+   Impression / export PDF
+   ------------------------------ */
+
+@media print {
+  :root {
+    --bg: #ffffff;
+    --paper: #ffffff;
+    --panel: #ffffff;
+    --panel-alt: #ffffff;
+
+    --text: #111111;
+    --muted: #333333;
+
+    --border: #bbbbbb;
+    --accent: #000000;
+
+    --info-bg: #ffffff;
+    --warn-bg: #ffffff;
+    --ok-bg: #ffffff;
+    --danger-bg: #ffffff;
+
+    --shadow: none;
+  }
+
+  html,
+  body {
+    background: #ffffff;
+    color: #111111;
+  }
+
+  body {
+    font-size: 11pt;
+  }
+
+  a {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .wrap {
+    max-width: none;
+    padding: 0;
+  }
+
+  .paper {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .topbar {
+    border-bottom: 1px solid #bbbbbb;
+    background: none;
+  }
+
+  .section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    border: 1px solid #bbbbbb;
+    background: #ffffff;
+  }
+
+  .pagebreak {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  table {
+    border: 1px solid #bbbbbb;
+    background: #ffffff;
+  }
+
+  th,
+  td {
+    border-bottom: 1px solid #dddddd;
+  }
+
+  .callout {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-left: 4px solid #888888;
+  }
+
+  blockquote {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-left: 3px solid #888888;
+  }
+
+  .badge {
+    border: 1px solid #bbbbbb;
+    color: #111111;
+    background: #ffffff;
+  }
+
+  .footer {
+    background: #ffffff;
+    border-top: 1px solid #bbbbbb;
+  }
+}
