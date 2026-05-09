@@ -5,22 +5,33 @@
    Variables globales
    ============================ */
 :root {
-  /* Couleurs générales */
+  /* Couleurs principales */
+  --bg-page: #111214;
   --bg-body: #cfc4dd;
   --bg-card: #6f879a;
+  --bg-panel: #181a1f;
+  --bg-panel-soft: #1e2128;
   --bg-nav: #020617;
   --bg-nav-hover: #1e293b;
 
+  /* Bordures */
+  --border: #2a2e38;
   --border-soft: rgba(255, 255, 255, 0.35);
-  --text-main: #f5eded;
-  --text-muted: #e5e7eb;
 
+  /* Textes */
+  --text-main: #f5eded;
+  --text-soft: #e5e7eb;
+  --text-muted: #d1d5db;
+
+  /* Accents */
   --accent: #8ea2ff;
   --accent-soft: #2849b3;
   --accent-strong: #d7ddff;
+  --accent-hover: #ff9d57;
   --accent-border: #6d89ff;
   --accent-hover-border: #8ba2ff;
 
+  /* Encadrés */
   --tw-bg: #07142d;
   --tw-border: #ff8c1a;
   --tw-text: #ffc67a;
@@ -28,37 +39,60 @@
   --note-bg: rgba(7, 70, 82, 0.35);
   --note-border: #38bff8;
 
-  /* Typo */
-  --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+  /* Ombres */
+  --shadow-lg: 0 18px 60px rgba(0, 0, 0, 0.45);
+  --shadow-md: 0 12px 32px rgba(58, 32, 82, 0.35);
 
-  /* Rayons / ombres */
+  /* Rayons */
   --radius-sm: 4px;
   --radius-md: 10px;
   --radius-lg: 18px;
   --radius-pill: 999px;
 
-  --shadow-md: 0 12px 32px rgba(58, 32, 82, 0.35);
+  /* Espacements */
+  --container-width: 1120px;
+  --content-width: 920px;
+
+  --space-2xs: 0.35rem;
+  --space-xs: 0.6rem;
+  --space-sm: 0.9rem;
+  --space-md: 1.25rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4rem;
+
+  /* Typographies */
+  --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-ui: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Transitions */
   --transition-fast: 0.15s ease;
+  --transition-normal: 0.18s ease;
 }
 
 /* ============================
    Mode sombre
    ============================ */
 body.dark-mode {
-  --bg-body: #bcb2cf;
-  --bg-card: #6f879a;
+  --bg-body: #111214;
+  --bg-card: #181a1f;
+  --bg-panel: #181a1f;
+  --bg-panel-soft: #1e2128;
   --bg-nav: #020617;
   --bg-nav-hover: #1e293b;
 
-  --border-soft: rgba(255, 255, 255, 0.28);
-  --text-main: #f5eded;
-  --text-muted: #d1d5db;
+  --border: #2a2e38;
+  --border-soft: #22252d;
 
-  --accent: #a5b4fc;
+  --text-main: #e6e6eb;
+  --text-soft: #b7bcc9;
+  --text-muted: #8c93a3;
+
+  --accent: #bb86fc;
   --accent-soft: #2849b3;
-  --accent-strong: #e7ebff;
+  --accent-strong: #d2a8ff;
+  --accent-hover: #ff9d57;
   --accent-border: #7c8eff;
   --accent-hover-border: #95a7ff;
 
@@ -69,7 +103,7 @@ body.dark-mode {
   --note-bg: rgba(7, 70, 82, 0.4);
   --note-border: #38bff8;
 
-  --shadow-md: 0 12px 34px rgba(44, 23, 63, 0.45);
+  --shadow-md: 0 12px 34px rgba(0, 0, 0, 0.42);
 }
 
 /* ============================
@@ -79,7 +113,6 @@ body.dys-mode {
   --font-main: "OpenDyslexic", "Verdana", "Tahoma", system-ui, sans-serif;
 }
 
-/* On applique vraiment la lisibilité aux éléments texte */
 body.dys-mode,
 body.dys-mode p,
 body.dys-mode li,
@@ -102,34 +135,81 @@ body.dys-mode .dys-toggle {
 /* ============================
    Base
    ============================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  padding: 0;
+  padding: var(--space-lg);
+  background:
+    radial-gradient(circle at top, rgba(187, 134, 252, 0.08), transparent 35%),
+    linear-gradient(180deg, var(--bg-body) 0%, #0d0e11 100%);
+  color: var(--text-main);
   font-family: var(--font-main);
   font-size: 16.5px;
-  line-height: 1.7;
-  background: var(--bg-body);
-  color: var(--text-main);
+  line-height: 1.75;
 }
 
 /* ============================
    Layout principal
    ============================ */
+.container,
 .page,
 main,
 .markdown-body {
   box-sizing: border-box;
-  max-width: 900px;
+  width: min(100%, var(--content-width));
   margin: 0.8rem auto 2.5rem;
   padding: 2rem 1.75rem 2.4rem;
   background: var(--bg-card);
+  border: 1px solid var(--border-soft);
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-lg);
+}
+
+.container {
+  width: min(100%, var(--container-width));
+  background: rgba(24, 26, 31, 0.92);
+  backdrop-filter: blur(6px);
+}
+
+.content {
+  min-width: 0;
 }
 
 /* ============================
-   Titre du site
+   Header
    ============================ */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-lg);
+  padding-bottom: var(--space-lg);
+  margin-bottom: var(--space-xl);
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  color: var(--accent-strong);
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.logo span {
+  color: var(--text-muted);
+}
+
 .site-title {
   margin: 0.6rem 0 0.5rem;
   font-size: 1.35rem !important;
@@ -151,14 +231,32 @@ main,
 /* ============================
    Navigation
    ============================ */
+nav,
 .top-nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 0.5rem;
+}
+
+.top-nav {
   margin: 1rem 0 1.8rem;
   padding-top: 0.8rem;
   border-top: 1px solid var(--border-soft);
+}
+
+nav a,
+.top-nav a,
+.theme-toggle,
+.dys-toggle {
+  color: var(--text-main);
+  text-decoration: none;
+  transition:
+    background-color var(--transition-fast),
+    border-color var(--transition-fast),
+    color var(--transition-fast),
+    opacity var(--transition-normal),
+    transform var(--transition-fast);
 }
 
 .top-nav a,
@@ -170,13 +268,11 @@ main,
   min-height: 36px;
   border: 1px solid var(--border-soft);
   border-radius: var(--radius-pill);
-  color: var(--text-main);
-  text-decoration: none;
-  transition:
-    background-color var(--transition-fast),
-    border-color var(--transition-fast),
-    color var(--transition-fast),
-    transform var(--transition-fast);
+}
+
+nav a,
+.top-nav a {
+  font-family: var(--font-ui);
 }
 
 .top-nav a {
@@ -186,6 +282,8 @@ main,
   font-weight: 500;
 }
 
+nav a:hover,
+nav a:focus-visible,
 .top-nav a:hover,
 .top-nav a:focus-visible {
   background: var(--bg-nav-hover);
@@ -202,7 +300,7 @@ main,
 }
 
 /* ============================
-   Boutons thème / dys
+   Boutons thème et Dys
    ============================ */
 .theme-toggle,
 .dys-toggle {
@@ -232,7 +330,6 @@ main,
   transform: translateY(-1px);
 }
 
-/* État visuel du bouton Dys quand activé */
 body.dys-mode .dys-toggle {
   background: rgba(255, 255, 255, 0.08);
   border-color: var(--accent-border);
@@ -240,19 +337,24 @@ body.dys-mode .dys-toggle {
 }
 
 /* ============================
-   Titres
+   Typographie
    ============================ */
 h1,
 h2,
-h3 {
-  color: var(--text-main);
+h3,
+.section-block h1,
+.section-block h2,
+.section-block h3,
+.sidebar h3,
+.pdf-card h3 {
+  color: var(--accent-strong);
   font-weight: 700;
+  line-height: 1.25;
 }
 
 h1 {
   margin: 0 0 1rem;
-  font-size: 2.05rem;
-  line-height: 1.25;
+  font-size: clamp(2rem, 3vw, 2.6rem);
 }
 
 h2 {
@@ -267,17 +369,17 @@ h3 {
   font-size: 1.12rem;
 }
 
-/* ============================
-   Texte courant
-   ============================ */
 p {
   margin: 0.5rem 0 1rem;
+  color: var(--text-main);
+  max-width: 72ch;
 }
 
 ul,
 ol {
   margin: 0.4rem 0 1.05rem;
   padding-left: 1.35rem;
+  color: var(--text-soft);
 }
 
 li + li {
@@ -305,12 +407,81 @@ a:focus-visible {
 }
 
 /* ============================
+   Sections
+   ============================ */
+.section-block {
+  padding-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.section-block + .section-block {
+  margin-top: var(--space-2xl);
+}
+
+.section-block:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* ============================
+   Sidebar
+   ============================ */
+.sidebar {
+  position: sticky;
+  top: 1.5rem;
+}
+
+.sidebar-block {
+  padding: var(--space-md);
+  background: linear-gradient(180deg, rgba(30, 33, 40, 0.88), rgba(20, 22, 27, 0.95));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+.sidebar-block + .sidebar-block {
+  margin-top: var(--space-md);
+}
+
+.sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar li + li {
+  margin-top: var(--space-xs);
+}
+
+.sidebar a {
+  color: var(--accent);
+  text-decoration: none;
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+  transition: color var(--transition-normal);
+}
+
+.sidebar a:hover,
+.sidebar a:focus-visible {
+  color: var(--accent-hover);
+  outline: none;
+}
+
+.sidebar p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 0.96rem;
+  max-width: none;
+}
+
+/* ============================
    Trigger warning
    ============================ */
 .tw-box {
   margin: 1.2rem 0 1.8rem;
   padding: 1rem 1rem 1.05rem;
   font-size: 0.98rem;
+  color: var(--text-main);
   background: var(--tw-bg);
   border: 1px solid var(--tw-border);
   border-radius: var(--radius-md);
@@ -321,7 +492,7 @@ a:focus-visible {
 }
 
 /* ============================
-   Notes / encadrés
+   Notes et encadrés
    ============================ */
 .note {
   margin: 1rem 0;
@@ -331,6 +502,51 @@ a:focus-visible {
   background: var(--note-bg);
   border-left: 4px solid var(--note-border);
   border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+/* ============================
+   Cartes PDF
+   ============================ */
+.pdf-card {
+  margin-top: var(--space-lg);
+  padding: var(--space-lg);
+  background: linear-gradient(180deg, rgba(24, 26, 31, 0.9), rgba(17, 19, 24, 1));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+.pdf-card p {
+  color: var(--text-soft);
+}
+
+.pdf-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: var(--space-sm);
+  padding: 0.7rem 1rem;
+  border: 1px solid rgba(187, 134, 252, 0.28);
+  border-radius: var(--radius-sm);
+  color: var(--accent-strong);
+  text-decoration: none;
+  font-family: var(--font-ui);
+  font-size: 0.92rem;
+  background: rgba(187, 134, 252, 0.06);
+  transition:
+    background var(--transition-normal),
+    border-color var(--transition-normal),
+    color var(--transition-normal),
+    transform var(--transition-normal);
+}
+
+.pdf-card a:hover,
+.pdf-card a:focus-visible {
+  background: rgba(255, 157, 87, 0.08);
+  border-color: rgba(255, 157, 87, 0.35);
+  color: var(--accent-hover);
+  transform: translateY(-1px);
+  outline: none;
 }
 
 /* ============================
@@ -354,8 +570,54 @@ hr {
 }
 
 /* ============================
+   Footer
+   ============================ */
+.site-footer {
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--border);
+}
+
+.site-footer p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  font-family: var(--font-ui);
+}
+
+/* ============================
    Responsive
    ============================ */
+@media (max-width: 920px) {
+  body {
+    padding: 1rem;
+  }
+
+  .container,
+  .page,
+  main,
+  .markdown-body {
+    padding: 1.4rem;
+  }
+
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+  }
+
+  p {
+    max-width: none;
+  }
+}
+
 @media (max-width: 720px) {
   body {
     font-size: 15.8px;
@@ -379,6 +641,30 @@ hr {
 
   h1 {
     font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 640px) {
+  nav,
+  .top-nav {
+    gap: 0.75rem 1rem;
+  }
+
+  nav a,
+  .top-nav a {
+    font-size: 0.88rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.35rem;
+  }
+
+  .pdf-card {
+    padding: 1rem;
   }
 }
 

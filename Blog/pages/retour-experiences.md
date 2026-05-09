@@ -14,6 +14,7 @@ title: Retours d’expérience de modération bénévole
   <a href="/Blog/pages/journal-veille-anonymise.html">Journal de veille anonymisé</a>
   <a href="/Blog/pages/ressources-liens-utiles.html">Ressources & liens utiles</a>
   <a href="/Blog/pages/retour-experiences.html" class="active">Retours d’expérience</a>
+  <a href="/Blog/pages/retour-experience-investigation-numerique-responsable.html"> Retours d’expérience Investigation</a>
 
 <button id="theme-toggle" class="theme-toggle" type="button">
     🌙 Mode sombre

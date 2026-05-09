@@ -14,6 +14,7 @@ title: Méthodologie – Veille, documentation et signalement responsable
   <a href="/Blog/pages/ressources-liens-utiles.html">Ressources &amp; liens utiles</a>
   <a href="/Blog/pages/retour-experiences.html">Retours d’expérience</a>
   <a href="/Blog/pages/methodologie.html" class="active">Méthodologie</a>
+  <a href="/Blog/pages/retour-experience-investigation-numerique-responsable.html"> Retours d’expérience Investigation</a>
 
   <button id="theme-toggle" class="theme-toggle" type="button">
     🌙 Mode sombre

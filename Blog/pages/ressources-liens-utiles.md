@@ -14,6 +14,7 @@ title: Ressources & liens utiles
   <a href="/Blog/pages/journal-veille-anonymise.html">Journal de veille</a>
   <a href="/Blog/pages/ressources-liens-utiles.html" class="active">Ressources &amp; liens utiles</a>
   <a href="/Blog/pages/retour-experiences.html">Retours d’expérience</a>
+  <a href="/Blog/pages/retour-experience-investigation-numerique-responsable.html"> Retours d’expérience Investigation</a>
 
   <button id="theme-toggle" class="theme-toggle" type="button">
     🌙 Mode sombre
