@@ -57,6 +57,8 @@ Je note ici les grandes évolutions du site :
 - `07/12/2025` : Ajout de la page [Retour d'expériences](/Blog/pages/retour-experiences.md)
 - `12/12/2025` : Ajout de la page [Analyse des schémas de prédation](/Blog/pages/analyse-schemas-predation.md)
 
+- `09/05/2026` : Ajout de la page [Retour d'expérience Investigation](/Blog/pages/retour-experience-investigation-numerique-responsable.md)
+
 
 Mise à jours Majeur : 
 - `07/12/2025` : UI : bascule entre mode clair et mode sombre disponibles via petit bouton :  '☀️ Mode clair' : '🌙 Mode sombre' 
