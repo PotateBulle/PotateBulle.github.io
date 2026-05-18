@@ -4,7 +4,7 @@ Ce dépôt contient le code source du site **GitHub Pages** de **Potite_Bulle**,
 dédié à la veille bénévole et à la documentation sur les violences sexuelles numériques en ligne.
 
 Le site est accessible ici (une fois GitHub Pages activé) :  
-https://PotiteBulle.github.io/PotateBulle/index.html
+https:/PotateBulle.github.io/PotateBulle/index.html
 
 ---
 <link rel="stylesheet" href="/Blog/assets/css/style.css">
